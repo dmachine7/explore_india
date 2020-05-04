@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styleindia.css">
+    <script src="indiajs.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/423fda78fd.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <title>India</title>
+  </head>
+  <body onload="mainscreenheight()" onresize="mainscreenheight()">
+
+    <button onclick="topFunction()" id="scrolltotop" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    <script type="text/javascript">
+      var mybutton = document.getElementById("scrolltotop");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        }
+        else {
+          mybutton.style.display = "none";
+        }
+      }
+    </script>
+
+    <nav class="navbar navbar-expand-sm bg-custom navbar-dark fixed-top justify-content-center" id="forheight">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="" onclick="topFunction()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#greet">Greetings</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Take me to
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#nation">Explore nation</a>
+              <a class="dropdown-item" href="#culture">Culture & Heritage</a>
+              <a class="dropdown-item" href="#comparison">AncientvsModern India</a>
+              <a class="dropdown-item" href="#rural">Rural India</a>
+              <a class="dropdown-item" href="#entertainment">Sports & Entertainment</a>
+              <a class="dropdown-item" href="#generalinfo">General info</a>
+              <a class="dropdown-item" href="#ministers">Authority</a>
+              <a class="dropdown-item" href="#quote">"Quoted"</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div id="mainscreen">
+      <img src="images/template.png" width="100%" />
+    </div><br><br>
+
+    <div class="container type-1"  style="background-image: url('images/namaste.png')"id="greet">
+      <div class="col-sm-12">
+        <div class="content" onclick="displayon(0)">
+          <h1 class="contenthead">GREETINGS.</h1>
+          <p class="contentdescription">Namaste! You are welcome. Hope your journey to here wasn't difficult.<br>
+            <strong>[traditional Indian welcome]</strong><br>
+             Now let's go and explore one of the oldest civilization of the world and endear its culture.</p>
+        </div>
+      </div>
+    </div>
+    <div class="articlediv" onclick="displayoff(0)">
+      <button type="button" style="float:right">Back <i class="fas fa-times"></i> </button>
+      <h1 class="articlehead">INDIA AT A GLANCE.</h1>
+      <p class="article">India is one of the oldest civilizations in the world with a kaleidoscopic variety and rich cultural heritage. It has achieved all-round socio-economic progress since its Independence. India has become self-sufficient in agricultural production and is now one of the top industrialized countries in the world and one of the few nations to have gone into outer space to conquer nature for the benefit of the people. It covers an area of 32,87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south. As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. Lying entirely in the northern hemisphere, the mainland extends between latitudes 8° 4' and 37° 6' north, longitudes 68° 7' and 97° 25' east and measures about 3,214 km from north to south between the extreme latitudes and about 2,933 km from east to west between the extreme longitudes. It has a land frontier of about 15,200 km. The total length of the coastline of the mainland, Lakshadweep Islands and Andaman & Nicobar Islands is 7,516.6 km.
+      </p>
+    </div>
+
+    <div class="container type-2" style="background-image: url('images/india.jpg')"id="nation">
+      <div class="col-sm-12">
+        <div class="content">
+          <h1 class="contenthead">EXPLORE NATION.</h1>
+          <p class="contentdescription">Bounded by the <strong>Great Himalayas</strong> in the north,
+             it stretches southwards and at the Tropic of Cancer,
+            tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container type-1" style="background-image: url('images/culture.jpg')"id="culture">
+      <div class="col-sm-12">
+        <div class="content">
+          <h1 class="contenthead">CULTURE & HERITAGE.</h1>
+          <p class="contentdescription">
+            The vital components of the Indian culture are <strong>good manners, etiquette,
+            civilized communication,</strong> and values.
+            Even after the lifestyles has been modernized, Indians have not changed their traditions & values.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container type-2" style="background-image:url('images/modernindia.jpg')" id="comparison">
+      <div class="col-sm-12">
+        <div class="content">
+          <h1 class="contenthead">ANCIENT VS MODERN INDIA.</h1>
+          <p class="contentdescription">From a holy land of great wealth and potential
+            to a country with great potential.
+            India has <strong>come a long way. OR . did it?</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container type-1" style="background-image:url('images/village.jpeg')" id="rural">
+      <div class="col-sm-12">
+        <div class="content" onclick="displayon(1)">
+          <h1 class="contenthead">RURAL INDIA.</h1>
+          <p class="contentdescription">The soul of the nation. Hop on the <strong>bullock cart</strong> and let's visit
+          a typical Indian village.</p>
+        </div>
+      </div>
+    </div>
+    <div class="articlediv" onclick="displayoff(1)">
+      <button type="button" style="float:right">Back <i class="fas fa-times"></i> </button>
+      <h1 class="articlehead">RURAL INDIA & RURAL LIFE.</h1>
+      <p class="article">
+          One fact of which we are all made aware is that India is an agricultural country. This means that the majority of the population practices agriculture either for self-sustenance or as a commercial activity. So there are far more villages and small towns in India that cities and metros. In fact, as per the last census two-thirds of the Indian population still lives in rural areas. The life of a villager and the environment of a village are distinctly different than the urban environment we grow up in. Let us explore this further in this article on Life in an Indian Village.<br>
+          <strong>The Farmer Life</strong><br>
+        Farming and agriculture are one of the most difficult jobs. The Indian farmer, in particular, is a hardworking and diligent man. The land and the crops need close attention and efforts day and night for a successful harvest. Life in an Indian village is not a walk in the park by any means.
+        The farmer will usually start his day before sunup and work throughout the whole day. It involves a lot of manual labor and persistence. They plow the land, sow the seeds, harvest the crops, etc. And a lot of the farmers do not enjoy the luxury of machines or tractors and have to rely on intense manual labor. Rain or shine, they can never take a day off.
+        And even after all these efforts and sacrifices, the financial conditions of farmers in India remains dire. The rising costs of living, frequent crop failures due to climate changes, insufficient support from the government and many other factors are contributing to their mistreatment. India in fact also faces the shameful problem of rising farmer suicides as well.
+        <br> <strong>Infrastructure and Environment in Villages</strong><br>
+        As one can imagine, villages are far less congested and polluted than cities. Due to lack of urbanization, they are able to main their natural habitat and environment to a large extent. There is a green cover around the village and overall a calm, clean and beautiful environment. Generally, there is also a water source close by, like a lake or river.
+        One disadvantage of living in an Indian village is the lack of infrastructure that plagues. Although, since independence, our government has made many efforts to provide these villages with basic infrastructure facilities, we have a long way to go still.
+        The houses of the villagers are usually made of thatched roofs and mud or clay. These are not permanent structures. There is maybe one school and one hospital shared among 3-4 small villages and usually involves a long commute. The roadways are not well maintained and usually not well connected either. Transportation facilities are also generally lacking and inadequate.
+    <br> <strong>Cultural Life in Villages</strong><br>
+        The village life, however, is not all work and no play. Villagers often gather for festivals, fairs, harvests, and other religious and cultural functions. Indian villages have a rich history of culture and tradition. Art is celebrated in the form of dance, songs, plays, etc. In fact, some of our most famous dance forms and songs come to us from these traditions practiced in various villages from India.
+      </p>
+    </div>
+
+    <div class="container type-2" style="background-image: url('images/tele.jpg')"id="entertainment">
+      <div class="col-sm-12">
+        <div class="content">
+          <h1 class="contenthead">SPORTS & ENTERTAINMENT.</h1>
+          <p class="contentdescription"><strong>Cricket is a religion</strong> in this country and Indian cinema produces
+          most number of films each year! Want to know more ? </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="generalinfo" class="container-fluid card-deck">
+      <div class="card">
+        <img class="card-img-top" src="images/defense.jpg" width="100%" height="65%">
+        <div class="card-body" onclick="displayon(2)">
+          <h1 class="card-title">DEFENSE.</h1>
+          <p class="card-text">Info about Indian defense.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/economy.jpg" width="100%" height="65%">
+        <div class="card-body" onclick="displayon(3)">
+          <h1 class="card-title">SOCIO-ECONOMIC.</h1>
+          <p class="card-text">Info about Indian socio-economic factors.</p>
+        </div>
+      </div>
+      <div class="card ">
+        <img class="card-img-top" src="images/tech.png" width="100%" height="65%">
+        <div class="card-body" onclick="displayon(4)">
+          <h1 class="card-title">SCIENCE & TECH.</h1>
+          <p class="card-text">Info about science and technological development.</p>
+        </div>
+      </div>
+    </div>
+    <div class="articlediv" onclick="displayoff(2)">
+      <button type="button" style="float:right">Back <i class="fas fa-times"></i> </button>
+      <h1 class="articlehead">INDIAN ARMED FORCES.</h1>
+      <p class="article">
+        The Indian Armed Forces are the military forces of the Republic of India. It consists of three professional uniformed services: the Indian Army, Indian Navy, and Indian Air Force.The mighty Indian military is one of the top five powers in the world - though growing civilian unrest is shifting the focus within.For 2020, India is ranked 4 of 138 out of the countries considered for the annual GFP review. It holds a PwrIndx* rating of 0.0953 (0.0000 considered 'perfect').
+        India ranks 2nd in terms of active military personnel : 1,444,000 The Armed Forces have four main tasks:
+        <ul>
+          <li>To assert the territorial integrity of India.</li>
+          <li>To defend the country if attacked by a foreign nation.</li>
+          <li>To support the civil community in case of disasters (e.g. flooding).</li>
+          <li>To participate in United Nations peacekeeping operations in consonance with India's commitment to the United Nations Charter.</li>
+        </ul>
+        <table class="table table-hover" >
+          <tr>
+            <th>Parameter</th>
+            <th>Strength</th>
+            <th>World ranking</th>
+          </tr>
+          <tr>
+            <th colspan="3">INDIAN ARMY</th>
+          </tr>
+          <tr>
+            <td>Tanks</td>
+            <td>4292</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Armoured vehicles</td>
+            <td>8686</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Towed artillery</td>
+            <td>4060</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Rocket projectors</td>
+            <td>266</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <th colspan="3">INDIAN AIR FORCE</th>
+          </tr>
+          <tr>
+            <td>Fighters</td>
+            <td>538</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Helicopters</td>
+            <td>722</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Attack Helicopters</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>Dedicated Attack</td>
+            <td>172</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Transporters</td>
+            <td>250</td>
+            <td>3</td>
+          </tr>
+          <tr>
+          <tr>
+            <th colspan="3">INDIAN NAVY</th>
+          </tr>
+            <td>Aircraft carriers</td>
+            <td>1</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Submarines</td>
+            <td>16</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Corvettes</td>
+            <td>19</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Destroyers</td>
+            <td>10</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>Frigates</td>
+            <td>13</td>
+            <td>5</td>
+          </tr>
+        </table>
+        <br>data source : Wikipedia.com,globalfirepower.com
+      </p>
+    </div>
+    <div class="articlediv" onclick="displayoff(3)">
+      <button type="button" style="float:right">Back <i class="fas fa-times"></i> </button>
+      <h1 class="articlehead">SOCIO-ECONOMIC FACTS & FIGURES OF INDIA.</h1>
+      <p class="article">
+        The economy of India is characterised as a developing market economy. It is the world's fifth-largest economy by nominal GDP and the third-largest by purchasing power parity (PPP). According to the IMF, on a per capita income basis, India ranked 139th by GDP (nominal) and 118th by GDP (PPP) in 2018. From independence in 1947 until 1991, successive governments promoted protectionist economic policies with extensive state intervention and regulation; the end of the Cold War and an acute balance of payments crisis in 1991 led to the adoption of a broad program of economic liberalisation. Since the start of the 21st century, annual average GDP growth has been 6% to 7%,and from 2014 to 2018, India was the world's fastest growing major economy, surpassing China. Historically, India was the largest economy in the world for most of the two millennia from the 1st until 19th century.
+      <br><strong>Quick facts</strong><br>
+      POPULATION: 1.3 billion <br> GDP (PPP): $10.5 trillion (word rank 3rd) | 7.1% growth in 2018| 5-year compound annual growth 7.6% | $7,874 per capita <br>UNEMPLOYMENT: 2.6% <br>INFLATION (CPI): 3.5% <br>FDI INFLOW: $42.3 billion <br>PUBLIC DEBT: 69.8% of GDP <br>EASE OF DOING BUSINESS RANK: 63rd <br>COUNTRY GROUP: Developing/Emerging
+      <br><strong>Sustainable Development Goals</strong><br>
+      With 16 out of 17 Sustainable Development Goals (SDGs) still far from being achieved, India continues to pursue ambitious targets towards social and economic development and environmental sustainability. Poverty elimination remains a key national objective and has been approached in a relatively comprehensive way through promoting continued economic growth while ensuring equitable access to public services among both the rural and growing urban population.
+      The Digital India scheme, along with other initiatives to increase access to finance, will help to meet the needs of a growing consumer class that is projected to reach 89 million households by 2025. India is also investing significantly in its services and industry sectors through the Skill India scheme, which will develop the next generation of highly skilled labour for growth in manufacturing and information and communication technology (ICT). As women make up 48% of the total Indian population but only 24% of the workforce, the Indian government is mainstreaming gender issues into programmes such as Startup India and Pradhan Mantri Mudra Yojana (PMMY) to promote female entrepreneurship.Schemes such as Clean India and Healthcare for All focus on social welfare through the provision of basic sanitation, adequate housing and universal health care. India has also focused on improving agricultural productivity to ensure food security. There are plans to double farmers’ incomes through investments in market linkages, crop diversification and infrastructure development. The Electricity for All programme emphasises India’s commitment to climate action.Goals as named- <br>
+      <br>1.No Poverty  2.Zero Hunger  3.Good Health and Well-Being  4.Quality Education  5.Gender Equality  6.Clean Water and Sanitation  7.Affordable and Clean Energy  8.Decent Work and Economic Growth  9.Industry, Innovation and Infrastructure  10.Reduced Inequalities  11.Sustainable Cities and Communities  12.Responsible Consumption and Production  13.Climate Action  14.Life Below Water  15.Life On Land  16.Peace, Justice and Strong Institutions  17.Partnerships for the Goals
+      </p>
+    </div>
+    <div class="articlediv" onclick="displayoff(4)">
+      <button type="button" style="float:right">Back <i class="fas fa-times"></i> </button>
+      <h1 class="articlehead">SCIENCE & TECHNOLOGY DEVELOPMENT IN INDIA.</h1>
+      <p class="article">
+        Over the recent past, Science and Technology has made tremendous contribution towards the settlement of industries in India.
+        Starting from the micro level to the macro level, research and development in the field of technology has created an ideal niche for the overall growth of the economic condition of the country. The perceptible examples are the development of Atomic Energy, Space Science, dozens of successful satellite systems, advanced medical technologies, etc.
+        After the independence, it was not possible for India to depend on other countries for various aspects of development; therefore, the development of indigenous technology was indispensable for the overall development of a country.
+        Thankfully, today, Indian technologies and companies are as competent as in other developed countries. India is also a lead in various fields, and is a tough competitor for other countries.
+        If we discuss about the skilled human resources, many Indians are at top-notch positions in leading companies.
+        Indian industries started flourishing post 1990, i.e., the landmark era. Globalization, liberalization, and privatization, facilitated this growth. The industries catering to Information & Technology, Atomic Energy, Automotive, Biotechnology, Nanotechnology, Pharmaceutical, Petroleum, etc. have increased at global level.
+        On the other hand, the Government of India has also made sizable investment in the field of research and development to encourage the advancement of Indian economy.
+        <br><strong>As numbers suggest</strong><br>
+        1. The 21st century in India is apparently marked as the beginning towards an advancement in terms of technology and enrichment of knowledge base in the fields of Science. India ranks third among the most attractive investment destinations for technology transactions in the world. Modern India has had a strong focus on science and technology, realising that it is a key element of economic growth.
+        <br>2. India is among the topmost countries in the world in the field of scientific research, positioned as one of the top five nations in the field of space exploration. The country has regularly undertaken space missions, including missions to the moon and the famed Polar Satellite Launch Vehicle (PSLV).
+        <br>3. India ranks second in terms of contribution to high-quality scientific research.
+        <br>4. It is among the world’s top 10 nations in the number of scientific publications.
+        <br>5. Position-wise, it is ranked 17th in the number of citations received and 34th in the number of citations per paper across the field of science and technology (among nations publishing 50,000 or more papers). The country is ranked ninth globally in the number of scientific publications and 12th in the number of patents filed.
+        <br>6. India has been ranked as the top exporter of information and communication technology (ICT) services and second in innovation quality in 2017#. The country has moved up six places to 60th position in the Global Innovation Index (GII).
+      </p>
+    </div>
+
+    <div class="container" id="ministers">
+      <div class="row" >
+        <div class="col-sm-6" >
+          <img src="images/pm.jpg" width="100%"height="600pxm" style="padding:5%">
+          <h1 >PRIME MINISTER OF INDIA.</h1>
+          <p>Shri Narendra Damodardas Modi</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="images/president.jfif" width="100%"height="600px" style="padding:5%">
+          <h1>PRESIDENT OF INDIA.</h1>
+          <p>Shri Ramnath Kovind</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="quote" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner"  title="source: scrolldroll.com">
+            <div class="carousel-item active">
+              <img src="images/quotes/1.jpg" alt='"what they say about India"'>
+              <div class="carousel-caption">
+                <p>"What they say about India"</p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/quotes/2.jpg" alt='"what they say about India"'>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/quotes/3.jpg" alt='"what they say about India"'>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/quotes/4.jpg" alt='"what they say about India"'>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/quotes/5.jpg" alt='"what they say about India"'>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/quotes/6.jpg" alt='"what they say about India"'>
+            </div>
+          </div>
+          <a class="carousel-control-prev"  href="#quote" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#quote" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+          <ul class="carousel-indicators">
+            <li data-target="#quote" data-slide-to="0" class="active"></li>
+            <li data-target="#quote" data-slide-to="1"></li>
+            <li data-target="#quote" data-slide-to="2"></li>
+            <li data-target="#quote" data-slide-to="3"></li>
+            <li data-target="#quote" data-slide-to="4"></li>
+            <li data-target="#quote" data-slide-to="5"></li>
+          </ul>
+        </div>
+
+    <div class="container">
+      <div class="col-sm-12">
+          <h1 id="endquote">"सारे जहॉं से अच्छा <br>हिन्दुस्तां हमारा"</h1>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({reset:true}).reveal('.container',{delay:200});
+      ScrollReveal({reset:true}).reveal('.content',{delay:100});
+      ScrollReveal({reset:true}).reveal('.carousel',{delay:200});
+    </script>
+  </body>
+</html>

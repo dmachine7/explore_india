@@ -1,0 +1,213 @@
+h1{
+  font-family: 'Ubuntu', sans-serif;
+}
+p,ul,table{
+  font-family: 'Raleway', sans-serif;
+}
+/*navbar styling*/
+.navbar{
+  background-color: #4e2200;
+  color: #fdf3e8;
+  font-family: 'Raleway', sans-serif;
+}
+/*for background image and slideshow*/
+body{
+  background-image: url("images/background.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-attachment: scroll;
+}
+#mainscreen{
+  transition: 1s;
+  background-size: 100%;
+}
+/*styling scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background:  linear-gradient(#ffbf08,#fb5507,#ff006c,#8338ea,#3887fe);
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh black;
+}
+/*icon in navbar*/
+#icon{
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+}
+/*scroll to top button*/
+#scrolltotop{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width:60px;
+  height: 60px;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #603813;
+  color: #fdf3e8;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow:0 0 10px 1px black;
+  opacity: 0.9;
+}
+#scrolltotop:hover{
+  opacity: 1;
+}
+/*quote slideshow*/
+.carousel{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.carousel-item img{
+  height: auto;
+  width: 100%;
+}
+/*container adjustments*/
+.container{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+}
+/*content styiling*/
+h1.contenthead{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100px;
+}
+p.contentdescription{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin-top: 3%;
+}
+.type-1{
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.type-2{
+
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.content{
+  color: #fdf3e8;
+  background: rgba(78, 34, 0, 0.7);
+  padding: 5%;
+  margin-top: 10%;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+.type-1 .content{
+  float: right;
+  margin-right: 0;
+}
+.type-2 .content{
+  float: left;
+  margin-left: 0;
+}
+.content:hover{
+  background: rgba(78, 34, 0, 0.9);
+}
+ul,table{
+  margin: 3%;
+  color: #4e2200;
+}
+/*article styling*/
+.articlediv{
+  position: fixed;
+  background-color: #fdf3e8;
+  box-shadow: 8px 8px 16px rgba(78, 34, 0, 0.7),-9px -9px 16px rgba(253, 243, 232, 0.7);
+  display: none;
+  z-index: 5;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
+}
+h1.articlehead{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 80px;
+  color: #4e2200;
+  margin: 3%;
+}
+p.article{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #4e2200;
+  margin: 3%;
+}
+/*card styling*/
+.card{
+  box-shadow: 8px 8px 16px rgba(78, 34, 0, 0.7),-9px -9px 16px rgba(253, 243, 232, 0.7);
+}
+.card-body{
+  background: #fdf3e8;
+  color: #4e2200;
+  border: none;
+}
+.card-body:hover{
+  color: #fdf3e8;
+  background:  #4e2200;
+  border: none;
+  transition: 0.3s;
+}
+h1.card-title{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+}
+p.card-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  margin-top: 3%;
+}
+/*minister column*/
+#ministers{
+  background-color:#4e2200;
+  color: #fdf3e8;
+  box-shadow: 8px 8px 16px rgba(78, 34, 0, 0.7),-9px -9px 16px rgba(253, 243, 232, 0.7);
+  text-align: center;
+}
+/*endquote css*/
+#endquote{
+  font-size: 150px;
+  text-align: center;
+  font-weight: 1000;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 5px 5px 10px #4e2200;
+  color: #4e2200;
+}
+/*styling to make site responsive and look good on small screens*/
+@media only screen and (max-width: 600px) {
+  h1.contenthead{
+    font-size: 50px;
+  }
+  p.contentdescription{
+    font-size: 15px;
+  }
+  .content{
+    margin-top: 30%;
+  }
+  .container{
+    margin: 5% auto;
+  }
+  #endquote{
+    font-size: 60px;
+    text-shadow: 2px 2px 5px #4e2200;
+  }
+  h1.card-title{
+    font-size: 35px;
+  }
+  p.card-text{
+    font-size: 12px;
+  }
+}
