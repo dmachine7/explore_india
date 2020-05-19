@@ -14,6 +14,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!--included icons from fontawesome.com-->
     <script src="https://kit.fontawesome.com/423fda78fd.js"></script>
+    <!--included google maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9w7UqxIHcnjfkXUkVdNGnXCKOPNFNL30&callback=myMap"></script>
     <!--included google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <!--favicon for website-->
@@ -670,6 +672,7 @@
       </p>
     </div>
 
+
     <div class="container" id="ministers">
       <div class="row" >
         <div class="col-sm-6" >
@@ -684,6 +687,8 @@
         </div>
       </div>
     </div>
+
+    <div id="indiamap" style="width:100%;height:600px"></div>
 
     <!--quotes slideshow-->
     <div id="quote" class="carousel slide" data-ride="carousel">
@@ -757,13 +762,20 @@
       </div>
       <div class="row">
         <div class="container contact">
-          <a class="aboutlink" target="_blank"href="https://github.com/dmachine7"><i class="fab fa-github"></i></a>
-          <a class="aboutlink" target="_blank"href="https://dmachine7.github.io/"><i class="fas fa-address-card"></i></a>
-          <a class="aboutlink" target="_blank"href="https://www.instagram.com/dmachine7_/"><i class="fab fa-instagram"></i></a>
-          <a class="aboutlink" target="_blank"href="mailto:dagarwal1310@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a class="aboutlink"href="https://github.com/dmachine7"><i class="fab fa-github"></i></a>
+          <a class="aboutlink"href="https://dmachine7.github.io/"><i class="fas fa-address-card"></i></a>
+          <a class="aboutlink"href="https://www.instagram.com/dmachine7_/"><i class="fab fa-instagram"></i></a>
+          <a class="aboutlink"href="mailto:dagarwal1310@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <!--login form-->
+      <div class="row">
+        <div class="container contact">
+            <h1><a href="https://dmachine7.github.io/form_validator">Join community</a></h1>
         </div>
       </div>
     </div>
+
 
     <!--include js script scrollreveal.js library-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -773,4 +785,5 @@
       ScrollReveal({reset:true}).reveal('.carousel',{delay:200});
     </script>
   </body>
+
 </html>
